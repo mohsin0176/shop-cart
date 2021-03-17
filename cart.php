@@ -7,7 +7,7 @@ include "item.php";
 
 if (isset($_GET['id'])) 
 {
-$result=mysqli_query($con,"SELECT *FROM product where id='.$_GET['id'].'");
+$result=mysqli_query($con,"SELECT *FROM product where id=".$_GET['id']);
 $product=mysqli_fetch_object($result);
 $item=new Item();
 $item->id=$product->id;
@@ -76,7 +76,7 @@ for ($i=0; $i <count($cart) ; $i++)
 	<td><?php echo $cart[$i]->price*$cart[$i]->quantity;?></td>
 </tr>
 <?php
-$index++;
+$index ++;
 }
 ?>
 <tr>

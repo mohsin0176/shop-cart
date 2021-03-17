@@ -11,7 +11,7 @@ $result=mysqli_query($con,"SELECT *FROM product");
 		<th>BUY</th>
 	</tr>
 	<?php 
-	while ($product=mysqli_execute_object($result)) 
+	while ($product=mysqli_fetch_object($result)) 
 	{ ?>
     <tr>
     	<td><?php echo $product->id ?> </td>
