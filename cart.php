@@ -86,6 +86,3 @@ $index ++;
 </table>
 <br>
 <a href="index.php">Continue Shopping</a>
-
-
-?>
